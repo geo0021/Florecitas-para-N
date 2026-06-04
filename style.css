@@ -2140,3 +2140,22 @@ body:not(.container) * {
     padding: 20px !important;
   }
 }
+
+#loveBtn {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    bottom: 15px !important;
+    animation: aparecerBotonCelular 1s ease forwards !important;
+    animation-delay: 5s !important; 
+  }
+
+  @keyframes aparecerBotonCelular {
+    from {
+      opacity: 0;
+      transform: translateX(-50%) scale(0.7);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+  }
