@@ -2007,7 +2007,7 @@ body:not(.container) * {
     opacity:0;
 
     animation:showBtn 1s forwards;
-    animation-delay:8s;
+    animation-delay:5.5s;
 
     box-shadow:0 0 20px #ff9ccf;
 }
