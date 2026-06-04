@@ -2159,3 +2159,66 @@ body:not(.container) * {
       transform: translateX(-50%) scale(1);
     }
   }
+
+  /* Estilos para asegurar la visibilidad del botón */
+.main-controls {
+  position: fixed;
+  bottom: 5vh; /* Lo posiciona a buena altura en el teléfono */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999; /* Lo pone por encima de cualquier animación o capa */
+  width: 100%;
+  text-align: center;
+}
+
+#loveBtn {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ffb6c1;
+  color: #010113;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 182, 193, 0.5);
+  font-weight: bold;
+  transition: transform 0.2s ease;
+  -webkit-animation: none !important; /* Evita que las reglas heredadas lo pausen */
+  animation: none !important;
+}
+
+#loveBtn:active {
+  transform: scale(0.95);
+}
+
+/* Estilos básicos para tu modal (por si acaso no los tenías definidos) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 85%;
+  max-width: 400px;
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
