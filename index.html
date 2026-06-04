@@ -1,17 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Florecitas para N <3</title>
+  <title>Florecitas para N &lt;3</title>
   <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    /* Estilos integrados para garantizar la visibilidad del botón sobre la animación */
+    .boton-amor {
+      position: fixed;
+      bottom: 8%; /* Lo posiciona en la parte inferior de la pantalla */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999; /* Se asegura de estar por encima de todos los elementos y del overflow */
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #ff6b8b; /* Color rosa pastel */
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 15px rgba(255, 107, 139, 0.5);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+      font-family: sans-serif;
+    }
 
+    .boton-amor:hover {
+      background-color: #ff4771;
+      transform: translateX(-50%) scale(1.05);
+    }
+
+    .boton-amor:active {
+      transform: translateX(-50%) scale(0.95);
+    }
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
+
 <div class="container">
   <div class="night"></div>
   <div class="flowers">
+    
     <div class="flower flower--1">
       <div class="flower__leafs flower__leafs--1">
         <div class="flower__leaf flower__leaf--1"></div>
@@ -28,7 +59,6 @@
         <div class="flower__light flower__light--6"></div>
         <div class="flower__light flower__light--7"></div>
         <div class="flower__light flower__light--8"></div>
-
       </div>
       <div class="flower__line">
         <div class="flower__line__leaf flower__line__leaf--1"></div>
@@ -56,7 +86,6 @@
         <div class="flower__light flower__light--6"></div>
         <div class="flower__light flower__light--7"></div>
         <div class="flower__light flower__light--8"></div>
-
       </div>
       <div class="flower__line">
         <div class="flower__line__leaf flower__line__leaf--1"></div>
@@ -82,7 +111,6 @@
         <div class="flower__light flower__light--6"></div>
         <div class="flower__light flower__light--7"></div>
         <div class="flower__light flower__light--8"></div>
-
       </div>
       <div class="flower__line">
         <div class="flower__line__leaf flower__line__leaf--1"></div>
@@ -91,6 +119,7 @@
         <div class="flower__line__leaf flower__line__leaf--4"></div>
       </div>
     </div>
+
     <div class="flower flower--4">
       <div class="flower__leafs flower__leafs--3">
         <div class="flower__leaf flower__leaf--1"></div>
@@ -107,7 +136,6 @@
         <div class="flower__light flower__light--6"></div>
         <div class="flower__light flower__light--7"></div>
         <div class="flower__light flower__light--8"></div>
-
       </div>
       <div class="flower__line">
         <div class="flower__line__leaf flower__line__leaf--1"></div>
@@ -332,132 +360,55 @@
       </div>
     </div>
   </div>
-  <script src="./script.js"></script>
-  <div class="bubbles">
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-    </div>
-    <div class="bubble"><svg class="heart" viewBox="0 0 32 32">
-        <title>heart22</title>
-        <path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path>
-      </svg>
-</div>
-<!-- partial -->
-  
-  <script>
-    // 确保动画立即开始
-    document.addEventListener('DOMContentLoaded', function() {
-      setTimeout(function() {
-        const container = document.querySelector('.container');
-        if (container) {
-          container.classList.remove('container');
-        }
-      }, 100);
-    });
-  </script>
 
-  </div> <button id="loveBtn">Presiona aquí 💌</button>
+  <div class="bubbles">
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+    <div class="bubble"><svg class="heart" viewBox="0 0 32 32"><title>heart22</title><path d="M23.6 2c-3.363 0-6.258 2.736-7.599 5.594-1.342-2.858-4.237-5.594-7.601-5.594-4.637 0-8.4 3.764-8.4 8.401 0 9.433 9.516 11.906 16.001 21.232 6.13-9.268 15.999-12.1 15.999-21.232 0-4.637-3.763-8.401-8.4-8.401z"></path></svg></div>
+  </div> 
+
+  <button id="loveBtn" class="boton-amor">Presiona aquí 💌</button>
 
   <div id="letterModal" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeLetter()">&times;</span>
       <h2>Para mi estrellita ✨</h2>
-      <p>Arriba esos ánimos mor, yo sé que tú puedes. Te mando estas florecitas, muchos ánimos, fuerza y suerte para esta recta final antes de tus vacaciones. Vas a ver que todo el esfuerzo valdrá la pena, ya te falta poco hermosa. Te amo 🧡 </p>
+      <p>Arriba esos ánimos mor, yo sé que tú puedes. Te mando estas florecitas, muchos ánimos, fuerza y suerte para esta recta final antes de tus vacaciones. Vas a ver que todo el esfuerzo valdrá la pena, ya te falta poco hermosa. Te amo 🧡</p>
     </div>
   </div>
 
-  <script src="./script.js"></script>
+</div> <script src="./script.js"></script>
+
+<script>
+  // Script de inicialización de la animación
+  document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+      const container = document.querySelector('.container');
+      /* Nota: Si al ejecutar el proyecto notas que las flores no se mueven o se rompen, 
+         comenta o borra la línea de abajo (container.classList.remove), ya que remover la clase del contenedor principal suele desactivar los estilos base. */
+      if (container) {
+        container.classList.remove('container');
+      }
+    }, 100);
+  });
+</script>
+
 </body>
-</html
+</html>
