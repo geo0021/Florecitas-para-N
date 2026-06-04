@@ -2007,7 +2007,7 @@ body:not(.container) * {
     opacity:0;
 
     animation:showBtn 1s forwards;
-    animation-delay:5.5s;
+    animation-delay:5s;
 
     box-shadow:0 0 20px #ff9ccf;
 }
@@ -2140,8 +2140,3 @@ body:not(.container) * {
     padding: 20px !important;
   }
 }
-
-#loveBtn {
-    padding: 10px 20px !important;
-    font-size: 14px !important;
-    bottom: 15px !important;
