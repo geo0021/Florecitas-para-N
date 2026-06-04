@@ -2140,3 +2140,8 @@ body:not(.container) * {
     padding: 20px !important;
   }
 }
+
+#loveBtn {
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    bottom: 15px !important;
